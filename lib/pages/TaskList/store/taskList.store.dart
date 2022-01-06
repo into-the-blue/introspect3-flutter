@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class HomeStore extends GetxController {
+class TaskListStore extends GetxController {
   var count = 0.obs;
 
   increment() {

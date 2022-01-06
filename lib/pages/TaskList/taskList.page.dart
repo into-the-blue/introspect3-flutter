@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import './store/home.store.dart';
+import 'store/taskList.store.dart';
+import '../../stores/index.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class TaskListPage extends StatelessWidget {
+  const TaskListPage({Key? key}) : super(key: key);
+
+  void dispose() {}
 
   @override
   Widget build(BuildContext context) {
-    final HomeStore homeStore = HomeStore();
+    final TaskListStore homeStore = TaskListStore();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home page'),
@@ -24,7 +27,7 @@ class HomePage extends StatelessWidget {
         elevation: 0,
         notchMargin: 6,
         child: Row(
-          children: [const Text('Bottom')],
+          children: const [Text('Bottom')],
         ),
       ),
     );

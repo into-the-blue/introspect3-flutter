@@ -1,3 +1,3 @@
-import '../pages/Home/store/home.store.dart';
+import '../pages/TaskList/store/taskList.store.dart';
 
-final homeStore = HomeStore();
+final taskListStore = TaskListStore();
